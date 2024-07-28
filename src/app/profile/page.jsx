@@ -10,7 +10,7 @@ export default function ProfilePage() {
   const token = localStorage.getItem('token');
 
   useEffect(() => {
-    const token = localStorage.getItem('token');
+    // const token = localStorage.getItem('token');
     if (token) {
       try {
         const decoded = jwtDecode(token);
