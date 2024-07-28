@@ -7,7 +7,7 @@ import { jwtDecode } from "jwt-decode";
 export default function ProfilePage() {
   const router = useRouter();
   const [decodedToken, setDecodedToken] = useState(null);
-  const token = localStorage.getItem('token');
+  // const token = localStorage.getItem('token');
 
   useEffect(() => {
     // const token = localStorage.getItem('token');
