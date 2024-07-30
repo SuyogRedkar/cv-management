@@ -6,12 +6,6 @@ import { Readable } from "stream";
 
 connect();
 
-export const config = {
-  api: {
-    bodyParser: false, 
-  },
-};
-
 export async function GET() {
   try {
     const candidates = await Candidate.find();
