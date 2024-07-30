@@ -22,6 +22,7 @@ export default function LoginPage() {
       console.log("Login success", response.data);
       toast.success("Login success");
       localStorage.setItem('token', response.data.token);
+      localStorage.setItem('userData', JSON.stringify(response.data.userData));
       router.push("/home");
     } catch (error) {
       console.log("Login failed", error.message);
